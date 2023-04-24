@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    padding: 15px 0; 
+    background-color: #ffffff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    Justify-content: center;
+    align-items: center; 
+    border: 0px solid green;
+}
+
+logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid green; 
+}
+
+logo-content-ing { border: solid 0px #42515f; }
+
+.emp-text {
+    font: normal normal bold 28px/25px Montserrat;
+    font-family: "Montserrat", sans-serif; 
+    Letter-spacing: 0px;
+    color: #8278;
+    text-transform: capitalize;
+}
+
+.emp-payroll { color: #42515f; }
+
+* { box-sizing: border-box;}
+

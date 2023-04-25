@@ -84,4 +84,5 @@ toString(){
     return "id=" +this.id+"name= "+this.name+", gender="+this.gender + ", profilePic=" +this.profilepic + 
     ", department="+ this.department + ", salary="+this.salary+ ", startDate=" +empDate+", note="+this.note;
 }
+
 }

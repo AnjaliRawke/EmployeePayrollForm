@@ -64,8 +64,19 @@ class EmployeeParollData{
         return this._startDate;
     }
     set startDate(startDate){
-        this._startDate=startDate;
+     const currentDate = new Date();
+        if (inputDate > currentDate) {
+        throw new Error("Start date must not be future date");
     }
+
+     const thirtyDaysAgo = new Date();
+        thirtyDaysAgo.setDate(currentDate.getDate() - 30);
+        if (inputDate < this._joinDate || inputDate > currentDate) {
+        throw new Error("Start date should be within 30 days of joining");
+    }
+    this._startDate = inputDate;
+    }
+    
 toString(){
     const options ={year :'numeric',month:'long',day:'numeric'}
     const empDate= !this.startDate ? "undefined": 
